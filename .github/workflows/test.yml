@@ -80,11 +80,12 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-acpid.json
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json
       
-      - name: 添加网卡扩展驱动[ds3615xs|ds3617xs|ds3622xsp]
+      - name: 【自定义】添加网卡扩展驱动[ds3615xs|ds3617xs|ds3622xsp]
         if: matrix.platform == 'ds3615xs' || matrix.platform == 'ds3617xs' || matrix.platform.ds3622xsp
         run: |
-          echo '添加RTL-8111/RTL-8168驱动'
+          echo '添加RTL-8111/RTL-8168/RTL-8169驱动'
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8168/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/r8169/rpext-index.json
 
       - name: 添加扩展驱动[dva3221]
         if: matrix.platform == 'dva3221'
