@@ -4,15 +4,9 @@
     "vid": "0x0525",
     "sn": "1230LWN009033",
     "mac1": "0011322A46E7",
-    "SataPortMap": "4",
-    "DiskIdxMap": "00"
+    "SataPortMap": "11",
+    "DiskIdxMap": "000C"
   },
-  "synoinfo": {
-    "internalportcfg": "0xffff",
-    "maxdisks": "16",
-    "support_bde_internal_10g": "no",
-    "support_disk_compatibility": "no",
-    "support_memory_compatibility": "no"
-  },
+  "synoinfo": {},
   "ramdisk_copy": {}
 }
