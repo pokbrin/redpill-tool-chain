@@ -31,6 +31,8 @@ jobs:
             version: 7.1.0-42661
           - platform: ds920p
             version: 7.1.0-42661  
+          - platform: ds1621p
+            version: 7.1.0-42661
           #- platform: ds3622xsp
           #  version: 7.1.0-42661
     steps:
