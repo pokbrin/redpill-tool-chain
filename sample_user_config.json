@@ -1,12 +1,20 @@
 {
   "extra_cmdline": {
-    "pid": "0xa4a5",
-    "vid": "0x0525",
+    "pid": "0x2088",
+    "vid": "0x1E3D",
     "sn": "1230LWN009033",
-    "mac1": "0011322A46E7",
-    "SataPortMap": "11",
-    "DiskIdxMap": "000C"
+    "mac1": "00E0669B35FC",
+    "mac2": "00E0669CE9C6",
+    "netif_num": 2,
+    "SataPortMap": "4",
+    "DiskIdxMap": "00"
   },
-  "synoinfo": {},
+  "synoinfo": {
+    "internalportcfg": "0xffff",
+    "maxdisks": "16",
+    "support_bde_internal_10g": "no",
+    "support_disk_compatibility": "no",
+    "support_memory_compatibility": "no"
+  },
   "ramdisk_copy": {}
 }
