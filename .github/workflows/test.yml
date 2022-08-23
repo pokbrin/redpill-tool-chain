@@ -55,6 +55,10 @@ jobs:
           rm -rf cache/*.pat
           rm -rf cache/*.org
           rm -rf docker/downloads/*.txz
+      - name: 生成sn
+        run: |
+          ./redpill_tool_chain.sh sn ${{matrix.platform}}
+          exit 0
 
       - name: 准备构建环境
         run: |
